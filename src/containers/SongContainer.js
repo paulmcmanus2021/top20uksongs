@@ -6,7 +6,7 @@ class SongContainer extends React.Component {
     super(props);
       this.state = {
         songs: [],
-        selectedSongTitle: {}
+        selectedSong: {}
 
     }
   }
@@ -20,10 +20,6 @@ class SongContainer extends React.Component {
   }
 
   render(){
-    const selectedSong = this.state.songs.find(song => {
-      return song.title === this.state.selectedSongTitle
-    })
-
     return(
       <div>
         <h1>UK Top 20</h1>
