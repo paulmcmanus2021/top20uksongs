@@ -1,10 +1,12 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
+import SongContainer from './containers/SongContainer';
 
-function App() {
-  return (
-    <h1>UK Top 20</h1>
-  );
+class App extends Component {
+  render() {
+    return (
+      <SongContainer />
+    );
+  }
 }
 
 export default App;
